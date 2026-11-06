@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>www.91.com制片厂-制片厂作品库_影视制作与片单索引</title>
+<meta name="description" content="www.91.com制片厂主题首页：了解制片厂作品库的栏目构成、片单索引方式与内容更新说明，快速进入作品浏览、类型筛选与制作说明区域。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131a2b'/%3E%3Crect x='14' y='20' width='36' height='24' rx='4' fill='none' stroke='%23e8b04b' stroke-width='3'/%3E%3Ccircle cx='22' cy='14' r='4' fill='%23e8b04b'/%3E%3Ccircle cx='32' cy='14' r='4' fill='%23e8b04b'/%3E%3Ccircle cx='42' cy='14' r='4' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#131a2b;
+  --ink-soft:#2c3448;
+  --paper:#f6f3ec;
+  --paper-2:#efe9dd;
+  --line:#d9d1c1;
+  --gold:#b9862f;
+  --gold-soft:#e8b04b;
+  --muted:#6b6455;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink-soft);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+
+/* ---------- header ---------- */
+header.site{
+  background:var(--ink);
+  color:#f2eee4;
+  border-bottom:3px solid var(--gold);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:12px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px;}
+.logo svg{width:38px;height:38px;flex:0 0 auto;}
+.logo span{font-size:1.02rem;line-height:1.25;color:#fff;word-break:break-word;}
+nav.top{display:flex;gap:6px;flex-wrap:wrap;font-size:.9rem;}
+nav.top a{
+  padding:6px 11px;border-radius:999px;color:#cfc9bb;transition:.18s;
+  border:1px solid transparent;white-space:nowrap;
+}
+nav.top a:hover,nav.top a:focus-visible{color:#fff;border-color:rgba(232,176,75,.55);background:rgba(232,176,75,.12);}
+nav.top a.primary{background:var(--gold-soft);color:#231a06;font-weight:700;}
+nav.top a.primary:hover{background:#f3c469;color:#231a06;}
+
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(232,176,75,.20),transparent 46%),
+    linear-gradient(160deg,#1a2338 0%,#131a2b 62%,#101625 100%);
+  color:#eee9dd;
+  padding:52px 0 46px;
+  border-bottom:1px solid #0d1220;
+}
+.hero-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:44px;align-items:center;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-soft);border:1px solid rgba(232,176,75,.45);
+  padding:5px 12px;border-radius:999px;margin-bottom:20px;
+}
+h1{
+  font-size:clamp(1.6rem,3.4vw,2.5rem);
+  line-height:1.28;font-weight:800;color:#fff;letter-spacing:.2px;
+  word-break:break-word;margin-bottom:16px;
+}
+.hero p.lead{font-size:1.02rem;color:#c4bfb2;max-width:36em;margin-bottom:26px;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;font-weight:700;font-size:.95rem;
+  border:1px solid transparent;transition:.18s;cursor:pointer;
+}
+.btn-gold{background:var(--gold-soft);color:#231a06;}
+.btn-gold:hover{background:#f5c96f;}
+.btn-ghost{border-color:rgba(232,176,75,.5);color:#f0e6d0;}
+.btn-ghost:hover{background:rgba(232,176,75,.14);}
+.hero-figure{justify-self:center;width:100%;max-width:330px;}
+.hero-figure figcaption{
+  font-size:.78rem;color:#8f8877;margin-top:12px;text-align:center;letter-spacing:.06em;
+}
+
+/* ---------- stat strip ---------- */
+.stat-strip{background:var(--paper-2);border-bottom:1px solid var(--line);}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat{
+  padding:20px 18px;border-right:1px solid var(--line);text-align:center;
+}
+.stat:last-child{border-right:0;}
+.stat b{display:block;font-size:1.28rem;color:var(--ink);font-weight:800;}
+.stat small{font-size:.78rem;color:var(--muted);letter-spacing:.04em;}
+
+/* ---------- sections ---------- */
+section{padding:54px 0;}
+.section-head{margin-bottom:26px;max-width:46em;}
+.section-head .kicker{
+  font-size:.76rem;letter-spacing:.2em;color:var(--gold);font-weight:700;
+  text-transform:uppercase;margin-bottom:8px;
+}
+h2{font-size:clamp(1.22rem,2.2vw,1.55rem);color:var(--ink);font-weight:800;line-height:1.4;margin-bottom:10px;}
+h3{font-size:1.02rem;color:var(--ink);font-weight:700;margin-bottom:6px;}
+p{max-width:44em;}
+.section-head p{color:var(--muted);font-size:.95rem;}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{
+  background:#fffdf8;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;display:flex;flex-direction:column;gap:8px;
+  box-shadow:0 1px 0 rgba(19,26,43,.03);transition:.18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(19,26,43,.08);border-color:#c8bda6;}
+.card .tag{
+  display:inline-block;font-size:.72rem;letter-spacing:.1em;font-weight:700;
+  color:var(--gold);background:rgba(185,134,47,.1);border-radius:6px;
+  padding:2px 8px;align-self:flex-start;
+}
+.card p{font-size:.9rem;color:var(--muted);}
+.card .meta{font-size:.78rem;color:#988f7c;margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);}
+
+/* film list */
+.list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.film{
+  display:flex;gap:16px;align-items:center;background:#fffdf8;
+  border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;
+}
+.film .thumb{
+  flex:0 0 56px;height:56px;border-radius:10px;display:grid;place-items:center;
+  background:linear-gradient(150deg,#1c2539,#131a2b);color:var(--gold-soft);
+  font-weight:800;font-size:.72rem;letter-spacing:.05em;
+}
+.film .info h3{font-size:.96rem;margin-bottom:2px;}
+.film .info p{font-size:.82rem;color:var(--muted);}
+
+/* tools */
+.tools{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.tool-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px;}
+.tool-bar input[type="search"]{
+  flex:1 1 260px;min-width:0;padding:11px 16px;border-radius:999px;
+  border:1px solid #c9c0ad;background:#fffdf8;font-size:.94rem;color:var(--ink);
+  font-family:inherit;outline:none;
+}
+.tool-bar input[type="search"]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,134,47,.16);}
+.chips{display:flex;gap:8px;flex-wrap:wrap;}
+.chip{
+  padding:7px 15px;border-radius:999px;border:1px solid #c9c0ad;background:#fffdf8;
+  font-size:.85rem;color:var(--ink-soft);cursor:pointer;font-family:inherit;transition:.16s;
+}
+.chip:hover{border-color:var(--gold);color:var(--gold);}
+.chip.active{background:var(--ink);color:#f3ece0;border-color:var(--ink);}
+.result-note{font-size:.85rem;color:var(--muted);margin-top:16px;}
+.result-note b{color:var(--gold);}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:34px;align-items:start;}
+.about-text p+p{margin-top:14px;}
+.about-text p{font-size:.95rem;color:var(--ink-soft);}
+.notice{
+  background:#fffdf8;border-left:4px solid var(--gold-soft);
+  border-radius:0 var(--radius) var(--radius) 0;padding:18px 20px;
+}
+.notice h3{font-size:.95rem;margin-bottom:8px;}
+.notice ul{list-style:none;font-size:.87rem;color:var(--muted);display:grid;gap:7px;}
+.notice li{padding-left:16px;position:relative;}
+.notice li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--gold-soft);}
+
+/* download band */
+.band{
+  background:linear-gradient(140deg,#1a2338,#101625);color:#eee9dd;
+  border-radius:var(--radius);padding:30px 30px;display:flex;
+  justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.band h2{color:#fff;margin-bottom:6px;}
+.band p{color:#b8b2a4;font-size:.9rem;max-width:32em;}
+.btn[aria-disabled="true"]{opacity:.9;}
+
+/* footer */
+footer.site{background:var(--ink);color:#a8a294;padding:38px 0 26px;font-size:.86rem;}
+.foot-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:24px;}
+.foot-brand{display:flex;gap:10px;align-items:center;font-weight:800;color:#fff;font-size:.98rem;}
+.foot-brand svg{width:30px;height:30px;}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;}
+.foot-links a:hover{color:var(--gold-soft);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;color:#7d7768;font-size:.8rem;line-height:1.7;}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;}
+  .hero-figure{max-width:250px;}
+  .cards{grid-template-columns:repeat(2,1fr);}
+  .about-grid{grid-template-columns:1fr;}
+  .stat-grid{grid-template-columns:repeat(2,1fr);}
+  .stat:nth-child(2){border-right:0;}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line);}
+}
+@media (max-width:640px){
+  body{font-size:15px;}
+  .header-inner{padding:10px 0;}
+  nav.top{font-size:.82rem;gap:4px;}
+  nav.top a{padding:5px 9px;}
+  .hero{padding:36px 0 34px;}
+  section{padding:38px 0;}
+  .cards{grid-template-columns:1fr;}
+  .list-grid{grid-template-columns:1fr;}
+  .band{padding:24px 20px;}
+  .film{gap:12px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="www.91.com制片厂 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1c2539"/>
+        <rect x="13" y="21" width="38" height="25" rx="4" fill="none" stroke="#e8b04b" stroke-width="3"/>
+        <circle cx="22" cy="14" r="4" fill="#e8b04b"/>
+        <circle cx="32" cy="14" r="4" fill="#e8b04b"/>
+        <circle cx="42" cy="14" r="4" fill="#e8b04b"/>
+        <circle cx="32" cy="33.5" r="4.5" fill="#e8b04b"/>
+      </svg>
+      <span>www.91.com制片厂</span>
+    </a>
+    <nav class="top" aria-label="主导航">
+      <a href="#works">作品库</a>
+      <a href="#films">片单索引</a>
+      <a href="#filter">类型筛选</a>
+      <a href="#about">关于制片厂</a>
+      <a class="primary" href="#works">浏览作品</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">作品库 · 片单索引 · 制作说明</span>
+        <h1>www.91.com制片厂</h1>
+        <p class="lead">这里是 www.91.com制片厂 的主题首页。我们按作品类型、片单结构与合作方式整理内容，帮助你在最短时间内找到想看的一类作品，也看清每一部作品从立项到成片的制作脉络。</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#works">浏览作品库</a>
+          <a class="btn btn-ghost" href="#filter">按类型筛选</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <svg viewBox="0 0 320 240" role="img" aria-label="制片厂工作台与胶片盘示意插画">
+          <rect x="0" y="0" width="320" height="240" rx="18" fill="#1c2539"/>
+          <rect x="26" y="118" width="268" height="86" rx="10" fill="#131a2b" stroke="#2f3a52" stroke-width="2"/>
+          <circle cx="72" cy="161" r="24" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <circle cx="72" cy="161" r="7" fill="#e8b04b"/>
+          <circle cx="132" cy="161" r="16" fill="none" stroke="#9a8f74" stroke-width="3"/>
+          <circle cx="132" cy="161" r="5" fill="#9a8f74"/>
+          <rect x="176" y="140" width="96" height="8" rx="4" fill="#3a4560"/>
+          <rect x="176" y="158" width="72" height="8" rx="4" fill="#3a4560"/>
+          <rect x="176" y="176" width="84" height="8" rx="4" fill="#2f3a52"/>
+          <rect x="26" y="46" width="90" height="52" rx="8" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <path d="M60 46v14M84 46v14M60 96V84M84 96v8" stroke="#e8b04b" stroke-width="3" stroke-linecap="round"/>
+          <rect x="140" y="52" width="154" height="10" rx="5" fill="#3a4560"/>
+          <rect x="140" y="72" width="112" height="10" rx="5" fill="#2f3a52"/>
+          <rect x="140" y="92" width="132" height="10" rx="5" fill="#2f3a52"/>
+        </svg>
+        <figcaption>从立项、拍摄到成片归档的工作流示意</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- STAT -->
+  <div class="stat-strip">
+    <div class="wrap">
+      <div class="stat-grid">
+        <div class="stat"><b>4 类</b><small>作品类型分区</small></div>
+        <div class="stat"><b>12 部</b><small>片单索引条目</small></div>
+        <div class="stat"><b>3 步</b><small>制作流程说明</small></div>
+        <div class="stat"><b>1 个</b><small>统一作品入口</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORKS -->
+  <section id="works">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">作品库</div>
+        <h2>www.91.com制片厂 的作品库按什么组织</h2>
+        <p>作品库不做杂乱堆叠，而是先按类型分区，再在分区内以片单形式排列。每一类作品都标注了题材方向与适用场景，方便你按兴趣直接进入对应区域。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">叙事类</span>
+          <h3>剧情短片</h3>
+          <p>以完整故事线为主，单部篇幅控制在短片体量，适合想快速看一个完整叙事的访问者。片单中按剧情、人物、场景三个维度做了标注。</p>
+          <div class="meta">查看方式：片单索引第 1–4 条</div>
+        </article>
+        <article class="card">
+          <span class="tag">纪实类</span>
+          <h3>纪录影像</h3>
+          <p>以真实场景与人物采访为素材，强调现场记录与后期结构的平衡。每部作品附有拍摄周期与素材来源的说明，便于判断内容取向。</p>
+          <div class="meta">查看方式：片单索引第 5–7 条</div>
+        </article>
+        <article class="card">
+          <span class="tag">视觉类</span>
+          <h3>概念短片</h3>
+          <p>以画面语言与听觉设计为主，剧情弱化，重点在氛围与创意呈现。适合关注摄影、调色与声音设计的访问者参考。</p>
+          <div class="meta">查看方式：片单索引第 8–10 条</div>
+        </article>
+        <article class="card">
+          <span class="tag">合作类</span>
+          <h3>联合出品</h3>
+          <p>与其他制作团队共同完成的项目，标明各自承担的分工环节。这一分区用于说明 www.91.com制片厂 在合作项目中的具体角色。</p>
+          <div class="meta">查看方式：片单索引第 11–12 条</div>
+        </article>
+        <article class="card">
+          <span class="tag">幕后</span>
+          <h3>制作手记</h3>
+          <p>记录分镜、勘景、剪辑等环节的实际做法与遇到的问题，按项目归档。手记不做宣传式表达，只保留可复用的经验条目。</p>
+          <div class="meta">查看方式：关于制片厂 · 制作说明</div>
+        </article>
+        <article class="card">
+          <span class="tag">索引</span>
+          <h3>片单说明</h3>
+          <p>解释片单的排序规则：先按类型，再按制作完成时间倒序。同一部作品只在一个分区出现，避免重复计数。</p>
+          <div class="meta">查看方式：片单索引 · 排序规则</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMS -->
+  <section id="films" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">片单索引</div>
+        <h2>片单中的条目如何阅读</h2>
+        <p>每条索引给出作品名、类型标签与一句内容提要。提要只描述内容方向，不替代观看；序号仅表示片单位置，不代表评价高低。</p>
+      </div>
+      <div class="list-grid">
+        <div class="film">
+          <div class="thumb">01</div>
+          <div class="info"><h3>《夜班车》</h3><p>剧情短片 · 城市夜间叙事，单线结构</p></div>
+        </div>
+        <div class="film">
+          <div class="thumb">02</div>
+          <div class="info"><h3>《旧厂房》</h3><p>剧情短片 · 空间与人物关系并行</p></div>
+        </div>
+        <div class="film">
+          <div class="thumb">05</div>
+          <div class="info"><h3>《河岸记录》</h3><p>纪录影像 · 现场采访为主，素材跨季节</p></div>
+        </div>
+        <div class="film">
+          <div class="thumb">06</div>
+          <div class="info"><h3>《手艺十年》</h3><p>纪录影像 · 人物跟拍，含制作过程</p></div>
+        </div>
+        <div class="film">
+          <div class="thumb">08</div>
+          <div class="info"><h3>《无色》</h3><p>概念短片 · 以光影与留白构建节奏</p></div>
+        </div>
+        <div class="film">
+          <div class="thumb">11</div>
+          <div class="info"><h3>《合拍计划》</h3><p>联合出品 · 分工与署名在片尾标明</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER TOOLS -->
+  <section id="filter" class="tools">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">类型筛选</div>
+        <h2>按类型或关键词定位作品</h2>
+        <p>输入关键词可即时筛选上方片单条目；点击类型标签可切换筛选范围。筛选只作用于本页已列出的条目，不会跳转外站。</p>
+      </div>
+      <div class="tool-bar">
+        <label for="q" style="position:absolute;left:-9999px;">搜索片单条目</label>
+        <input id="q" type="search" placeholder="输入作品名或类型，如：纪录、短片…">
+        <div class="chips" role="group" aria-label="类型筛选">
+          <button class="chip active" data-type="all" type="button">全部</button>
+          <button class="chip" data-type="剧情" type="button">剧情短片</button>
+          <button class="chip" data-type="纪录" type="button">纪录影像</button>
+          <button class="chip" data-type="概念" type="button">概念短片</button>
+          <button class="chip" data-type="联合" type="button">联合出品</button>
+        </div>
+      </div>
+      <p class="result-note" id="note">当前显示 <b>6</b> 条片单条目。</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">关于制片厂</div>
+        <h2>www.91.com制片厂 的制作说明与内容边界</h2>
+        <p>这一区域说明作品是怎么做出来的，以及本页能提供什么、不能提供什么。内容以流程与分工为主，不涉及无法核实的成绩表述。</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>www.91.com制片厂 的作品从立项开始进入流程：先确认题材方向与拍摄条件，再完成分镜与勘景，最后进入拍摄和后期。三个环节各有一份工作清单，片单中的每部作品都能回溯到对应环节的记录。</p>
+          <p>在联合出品的项目中，www.91.com制片厂 承担的分工会明确写在项目说明里，署名顺序按实际分工排列。我们不在作品介绍中使用无法验证的排名或数据，片单排序只反映类型与完成时间。</p>
+          <p>访问 www.91.com制片厂 的本页，你可以完成三件事：浏览类型分区、用筛选工具定位条目、阅读制作说明。作品的完整观看与下载入口将随后续页面提供，本页暂不提供在线播放。</p>
+        </div>
+        <aside class="notice">
+          <h3>内容边界说明</h3>
+          <ul>
+            <li>本页为 www.91.com制片厂 主题首页，仅提供索引与说明。</li>
+            <li>片单条目为分类示例，数量与序号以本页列出为准。</li>
+            <li>筛选结果为页面内即时匹配，不涉及外部数据。</li>
+            <li>下载入口尚未开放，按钮处于禁用状态。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD BAND -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>下载 www.91.com制片厂 作品索引</h2>
+          <p>索引文件包含片单条目与类型标签，便于离线查阅。下载地址仍在准备中，开放后本按钮将恢复可用。</p>
+        </div>
+        <a class="btn btn-gold" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none;">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1c2539"/>
+          <rect x="13" y="21" width="38" height="25" rx="4" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <circle cx="22" cy="14" r="4" fill="#e8b04b"/>
+          <circle cx="32" cy="14" r="4" fill="#e8b04b"/>
+          <circle cx="42" cy="14" r="4" fill="#e8b04b"/>
+        </svg>
+        <span>www.91.com制片厂</span>
+      </div>
+      <nav class="foot-links" aria-label="页尾导航">
+        <a href="#works">作品库</a>
+        <a href="#films">片单索引</a>
+        <a href="#filter">类型筛选</a>
+        <a href="#about">制作说明</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      www.91.com制片厂 主题首页 · 内容围绕作品库、片单索引与制作说明展开。片单序号与类型标签为本页组织方式，具体作品信息以对应项目说明为准。
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var films = Array.prototype.slice.call(document.querySelectorAll('.film'));
+  var note = document.getElementById('note');
+  var type = 'all';
+
+  function apply(){
+    var kw = (q.value || '').trim().toLowerCase();
+    var shown = 0;
+    films.forEach(function(f){
+      var text = f.textContent.toLowerCase();
+      var okType = (type === 'all') || text.indexOf(type.toLowerCase()) > -1;
+      var okKw = !kw || text.indexOf(kw) > -1;
+      var show = okType && okKw;
+      f.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    note.innerHTML = '当前显示 <b>' + shown + '</b> 条片单条目。';
+  }
+
+  q.addEventListener('input', apply);
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){ x.classList.remove('active'); });
+      c.classList.add('active');
+      type = c.getAttribute('data-type');
+      apply();
+    });
+  });
+})();
+</script>
+</body>
+</html>
