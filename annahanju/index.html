@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安娜韩剧-安娜韩剧剧情解析_分集看点与角色关系梳理</title>
+<meta name="description" content="安娜韩剧主题首页：梳理安娜韩剧的故事背景、人物关系、分集看点与观剧顺序，帮助观众在开播前后快速了解这部韩剧的核心信息与讨论重点。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1a2e'/%3E%3Cpath d='M20 44V20l12 8 12-8v24' fill='none' stroke='%23e8c07a' stroke-width='4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#1b1a2e;
+    --ink-soft:#3b3a52;
+    --paper:#f7f4ee;
+    --paper-2:#efeae0;
+    --gold:#c79a47;
+    --gold-soft:#e8c07a;
+    --line:#ddd5c7;
+    --white:#fffdf8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px;}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,238,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;gap:18px;
+    min-height:66px;
+  }
+  .brand{display:flex;align-items:center;gap:11px;}
+  .brand-mark{
+    width:38px;height:38px;flex:none;border-radius:10px;
+    background:var(--ink);
+    display:grid;place-items:center;
+  }
+  .brand-name{
+    font-size:19px;font-weight:700;letter-spacing:.06em;
+    color:var(--ink);white-space:nowrap;
+  }
+  nav.menu{display:flex;gap:26px;font-size:14.5px;letter-spacing:.04em;color:var(--ink-soft);}
+  nav.menu a{padding:4px 0;border-bottom:1px solid transparent;transition:.2s;}
+  nav.menu a:hover{color:var(--gold);border-bottom-color:var(--gold-soft);}
+  .nav-cta{
+    font-size:14px;padding:8px 18px;border:1px solid var(--ink);
+    border-radius:999px;white-space:nowrap;transition:.2s;
+  }
+  .nav-cta:hover{background:var(--ink);color:var(--paper);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(900px 380px at 84% -10%,rgba(232,192,122,.30),transparent 65%),
+      linear-gradient(180deg,#fffdf8 0%,var(--paper) 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:48px;
+    align-items:center;padding:66px 0 62px;
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:.18em;color:var(--gold);
+    border:1px solid var(--gold-soft);border-radius:999px;
+    padding:5px 14px;margin-bottom:22px;
+    background:rgba(232,192,122,.10);
+  }
+  h1{
+    font-size:clamp(34px,5vw,52px);
+    line-height:1.24;letter-spacing:.04em;font-weight:700;
+    margin-bottom:20px;
+  }
+  h1 .accent{
+    background:linear-gradient(180deg,transparent 68%,rgba(232,192,122,.55) 68%);
+    padding:0 2px;
+  }
+  .hero-lead{
+    font-size:16.5px;color:var(--ink-soft);max-width:36em;
+    margin-bottom:16px;
+  }
+  .hero-note{
+    font-size:14px;color:#6b6656;max-width:34em;
+    border-left:3px solid var(--gold-soft);padding-left:14px;margin-bottom:30px;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:9px;
+    background:var(--ink);color:var(--paper);
+    padding:13px 26px;border-radius:999px;font-size:15px;letter-spacing:.05em;
+    transition:.22s;
+  }
+  .btn-primary:hover{background:#2c2a45;transform:translateY(-1px);}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid var(--line);background:var(--white);
+    padding:12px 22px;border-radius:999px;font-size:15px;color:var(--ink-soft);
+    transition:.22s;
+  }
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
+
+  .hero-art{
+    position:relative;
+    border-radius:22px;overflow:hidden;
+    background:linear-gradient(160deg,#232136 0%,#14131f 100%);
+    box-shadow:0 24px 48px -26px rgba(27,26,46,.55);
+    aspect-ratio:4/3.4;
+    display:grid;place-items:center;
+  }
+  .hero-art svg{width:78%;height:auto;}
+  .art-cap{
+    position:absolute;left:20px;bottom:18px;
+    color:#cfc6ae;font-size:12.5px;letter-spacing:.14em;
+  }
+  .art-tag{
+    position:absolute;right:16px;top:16px;
+    font-size:12px;letter-spacing:.12em;color:#1b1a2e;
+    background:var(--gold-soft);border-radius:999px;padding:4px 12px;
+  }
+
+  /* ---------- section base ---------- */
+  section{padding:64px 0;}
+  .sec-head{margin-bottom:34px;max-width:44em;}
+  .sec-label{
+    font-size:12.5px;letter-spacing:.2em;color:var(--gold);
+    margin-bottom:10px;
+  }
+  h2{
+    font-size:clamp(23px,3vw,30px);font-weight:700;letter-spacing:.03em;
+    line-height:1.4;margin-bottom:12px;
+  }
+  .sec-desc{font-size:15.5px;color:var(--ink-soft);}
+
+  /* ---------- info cards ---------- */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:var(--white);border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px 24px;
+    transition:.24s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 30px -22px rgba(27,26,46,.4);border-color:var(--gold-soft);}
+  .card-ico{
+    width:42px;height:42px;border-radius:11px;
+    background:var(--paper-2);display:grid;place-items:center;margin-bottom:16px;
+  }
+  .card h3{font-size:17px;letter-spacing:.03em;margin-bottom:9px;}
+  .card p{font-size:14.5px;color:var(--ink-soft);line-height:1.8;}
+
+  /* ---------- story / split ---------- */
+  .split{
+    display:grid;grid-template-columns:.95fr 1.05fr;gap:46px;align-items:start;
+  }
+  .prose p{font-size:15.5px;color:var(--ink-soft);margin-bottom:16px;}
+  .prose p:last-child{margin-bottom:0;}
+  .prose strong{color:var(--ink);font-weight:700;}
+
+  .facts{
+    background:var(--white);border:1px solid var(--line);
+    border-radius:var(--radius);padding:8px 24px;
+  }
+  .fact{
+    display:flex;justify-content:space-between;gap:16px;
+    padding:15px 0;border-bottom:1px dashed var(--line);font-size:14.5px;
+  }
+  .fact:last-child{border-bottom:0;}
+  .fact dt{color:#7a7466;letter-spacing:.04em;flex:none;}
+  .fact dd{color:var(--ink);text-align:right;}
+
+  /* ---------- episode list ---------- */
+  .ep-band{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .ep-list{display:grid;gap:14px;}
+  .ep{
+    display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:center;
+    background:var(--white);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;transition:.2s;
+  }
+  .ep:hover{border-color:var(--gold-soft);}
+  .ep-no{
+    font-size:13px;letter-spacing:.1em;color:var(--gold);
+    border-right:1px solid var(--line);padding-right:16px;
+  }
+  .ep h3{font-size:16px;margin-bottom:4px;letter-spacing:.02em;}
+  .ep p{font-size:14px;color:var(--ink-soft);}
+  .ep-tag{
+    font-size:12px;letter-spacing:.1em;color:#7a7466;
+    border:1px solid var(--line);border-radius:999px;padding:4px 12px;white-space:nowrap;
+  }
+
+  /* ---------- roles ---------- */
+  .roles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .role{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;position:relative;overflow:hidden;
+  }
+  .role::before{
+    content:"";position:absolute;inset:0 auto 0 0;width:4px;
+    background:linear-gradient(180deg,var(--gold-soft),transparent);
+  }
+  .role h3{font-size:16.5px;margin-bottom:6px;}
+  .role .rline{font-size:13px;color:var(--gold);letter-spacing:.1em;margin-bottom:12px;}
+  .role p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* ---------- faq ---------- */
+  .faq{display:grid;gap:12px;max-width:60em;}
+  details{
+    background:var(--white);border:1px solid var(--line);border-radius:12px;
+    padding:0 22px;
+  }
+  details[open]{border-color:var(--gold-soft);}
+  summary{
+    cursor:pointer;list-style:none;padding:17px 0;
+    font-size:15.5px;font-weight:700;letter-spacing:.02em;
+    display:flex;justify-content:space-between;gap:14px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--gold);font-size:19px;font-weight:400;line-height:1;}
+  details[open] summary::after{content:"−";}
+  details p{font-size:14.5px;color:var(--ink-soft);padding:0 0 20px;}
+
+  /* ---------- cta ---------- */
+  .cta-band{
+    background:linear-gradient(135deg,#232136 0%,#17161f 100%);
+    color:#efe9dc;border-radius:20px;padding:46px 42px;
+    display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;
+    margin-top:8px;
+  }
+  .cta-band h2{color:#fffdf8;margin-bottom:10px;}
+  .cta-band p{font-size:15px;color:#c3bba9;max-width:38em;}
+  .btn-dl{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold-soft);color:#1b1a2e;
+    padding:14px 30px;border-radius:999px;font-size:15px;font-weight:700;letter-spacing:.06em;
+  }
+  .btn-dl[aria-disabled="true"]{opacity:.92;cursor:default;pointer-events:none;}
+
+  /* ---------- footer ---------- */
+  footer.site{
+    border-top:1px solid var(--line);background:var(--paper);
+    padding:40px 0 46px;margin-top:8px;
+  }
+  .foot-inner{
+    display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;
+    align-items:flex-start;
+  }
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .foot-brand .brand-name{font-size:16px;}
+  .foot-desc{font-size:13.5px;color:#7a7466;max-width:34em;line-height:1.9;}
+  .foot-links{display:flex;gap:26px;flex-wrap:wrap;font-size:13.5px;color:#7a7466;}
+  .foot-links a:hover{color:var(--gold);}
+  .foot-bottom{
+    margin-top:28px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12.5px;color:#8f8878;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:920px){
+    .hero-inner{grid-template-columns:1fr;gap:34px;padding:44px 0 46px;}
+    .hero-art{max-width:460px;width:100%;margin:0 auto;aspect-ratio:4/3;}
+    .split{grid-template-columns:1fr;gap:28px;}
+    .grid-3,.roles{grid-template-columns:1fr 1fr;}
+    .cta-band{grid-template-columns:1fr;padding:36px 26px;}
+    nav.menu{display:none;}
+  }
+  @media (max-width:620px){
+    body{font-size:15.5px;}
+    .wrap{padding:0 18px;}
+    section{padding:44px 0;}
+    .grid-3,.roles{grid-template-columns:1fr;}
+    .nav-inner{min-height:60px;gap:10px;}
+    .brand-name{font-size:16.5px;}
+    .brand-mark{width:34px;height:34px;}
+    .nav-cta{padding:7px 14px;font-size:13px;}
+    .hero-lead{font-size:15.5px;}
+    .hero-note{font-size:13.5px;}
+    .ep{grid-template-columns:1fr;gap:8px;padding:16px 18px;}
+    .ep-no{border-right:0;padding-right:0;}
+    .ep-tag{justify-self:start;}
+    .card{padding:22px 20px;}
+    .faq{max-width:100%;}
+    .foot-bottom{flex-direction:column;gap:6px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="安娜韩剧 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 64 64" role="img">
+          <path d="M20 44V20l12 8 12-8v24" fill="none" stroke="#e8c07a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">安娜韩剧</span>
+    </a>
+    <nav class="menu" aria-label="页内导航">
+      <a href="#story">故事背景</a>
+      <a href="#episodes">分集看点</a>
+      <a href="#roles">角色关系</a>
+      <a href="#faq">观剧问答</a>
+    </nav>
+    <a class="nav-cta" href="#start">开始了解</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="kicker">韩剧主题 · 剧情梳理</span>
+        <h1 id="hero-title"><span class="accent">安娜韩剧</span></h1>
+        <p class="hero-lead">安娜韩剧是一部围绕身份、欲望与选择展开的韩剧。本页把观众最关心的信息整理在一起：故事从哪条线索开始，人物之间如何牵连，哪些集数值得停留，以及追剧时容易忽略的细节。</p>
+        <p class="hero-note">页面内容以剧集公开信息与常见观剧讨论为基础，具体情节以正式播出版本为准。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#episodes">
+            查看分集看点
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-ghost" href="#roles">先看角色关系</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-tag">主题视觉</span>
+        <svg viewBox="0 0 320 280" role="img" aria-label="安娜韩剧主题插画：幕布、光与人物剪影">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8c07a"/>
+              <stop offset="1" stop-color="#a6792f"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3b3757"/>
+              <stop offset="1" stop-color="#1d1b2c"/>
+            </linearGradient>
+          </defs>
+          <rect x="18" y="14" width="284" height="252" rx="16" fill="url(#g2)" stroke="#4a4566"/>
+          <path d="M18 92c60-30 110 12 142 0s58-34 142-8v182H18z" fill="#221f36" opacity=".85"/>
+          <circle cx="160" cy="96" r="46" fill="url(#g1)" opacity=".22"/>
+          <circle cx="160" cy="96" r="30" fill="none" stroke="url(#g1)" stroke-width="2" opacity=".7"/>
+          <path d="M118 214c0-26 19-44 42-44s42 18 42 44z" fill="#e8c07a" opacity=".85"/>
+          <circle cx="160" cy="156" r="18" fill="#f2dcae"/>
+          <path d="M52 214v-58M268 214v-58" stroke="#4a4566" stroke-width="2"/>
+          <path d="M44 214h232" stroke="#e8c07a" stroke-width="2" opacity=".55"/>
+          <path d="M84 214v-26h18v26M218 214v-26h18v26" fill="#2b2844" stroke="#4a4566"/>
+          <path d="M100 66l10 6-10 6M210 66l-10 6 10 6" fill="none" stroke="#e8c07a" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+        </svg>
+        <span class="art-cap">身份 · 欲望 · 选择</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 快速入口 ===== -->
+  <section id="start" aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">从哪里开始</p>
+        <h2 id="start-title">三条线索，读懂安娜韩剧的基本框架</h2>
+        <p class="sec-desc">第一次接触安娜韩剧，先抓住叙事主线、人物牵连与观剧节奏这三件事，再进入具体集数，理解会更顺。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 5h16v14H4z" fill="none" stroke="#c79a47" stroke-width="1.8"/><path d="M8 9h8M8 13h5" stroke="#c79a47" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>叙事主线</h3>
+          <p>安娜韩剧以主角的身份处境为轴，把外部环境的变化与内心选择交替推进，前段铺垫、中段转折、后段收束的结构相对清晰。</p>
+        </article>
+        <article class="card">
+          <div class="card-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2" fill="none" stroke="#c79a47" stroke-width="1.8"/><circle cx="16.5" cy="14" r="2.6" fill="none" stroke="#c79a47" stroke-width="1.8"/><path d="M4 19c.6-2.6 2.6-4 5-4s4.4 1.4 5 4" fill="none" stroke="#c79a47" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>人物牵连</h3>
+          <p>围绕安娜韩剧的主要人物不止一条关系线，家庭、职场与私人情感彼此交叉，理解谁在推动剧情，比记住所有名字更重要。</p>
+        </article>
+        <article class="card">
+          <div class="card-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke="#c79a47" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="8" fill="none" stroke="#c79a47" stroke-width="1.8"/></svg>
+          </div>
+          <h3>观剧节奏</h3>
+          <p>安娜韩剧的信息密度在中段明显上升，建议按集顺序观看；若只想回顾重点，可先看分集看点中的标记条目，再补看前后衔接片段。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 故事背景 ===== -->
+  <section id="story" aria-labelledby="story-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">故事背景</p>
+        <h2 id="story-title">安娜韩剧讲的是什么</h2>
+        <p class="sec-desc">把剧名放回完整的叙事语境里，更容易理解它为什么会被反复讨论。</p>
+      </div>
+      <div class="split">
+        <div class="prose">
+          <p>安娜韩剧的核心并不复杂：一个人试图在既定秩序里为自己争取位置，而每一次争取都会带来新的代价。剧集用大量生活化的场景呈现这种拉扯，让选择显得具体，而不是抽象的口号。</p>
+          <p>从结构上看，<strong>安娜韩剧</strong>把冲突分成内外两层。外层是环境施加的压力，包括家庭期待、关系变动与现实条件；内层是主角对自我价值的判断。两层冲突交替出现，构成全剧的主要张力。</p>
+          <p>因此，观看安娜韩剧时不必急着判断人物对错。剧集更在意呈现选择的形成过程：一个人为什么会在某个时刻做出看似不合理的决定，前因往往藏在更早的段落里。理解这一点，重看时的感受会明显不同。</p>
+        </div>
+        <dl class="facts">
+          <div class="fact"><dt>剧集类型</dt><dd>韩剧 · 剧情向</dd></div>
+          <div class="fact"><dt>叙事重心</dt><dd>身份处境与个人选择</dd></div>
+          <div class="fact"><dt>结构特点</dt><dd>前段铺垫、中段转折、后段收束</dd></div>
+          <div class="fact"><dt>观看建议</dt><dd>按集顺序观看，注意前后呼应</dd></div>
+          <div class="fact"><dt>适合人群</dt><dd>偏好人物刻画与情感线的观众</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分集看点 ===== -->
+  <section id="episodes" class="ep-band" aria-labelledby="ep-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">分集看点</p>
+        <h2 id="ep-title">安娜韩剧的观剧重点分布</h2>
+        <p class="sec-desc">按叙事阶段划分，而不是逐集复述。以下条目说明每个阶段承担的任务，便于安排观看节奏。</p>
+      </div>
+      <div class="ep-list">
+        <article class="ep">
+          <span class="ep-no">开篇</span>
+          <div>
+            <h3>人物与处境建立</h3>
+            <p>安娜韩剧在此阶段交代主角的生活环境与关系网络，信息量不大，但埋下了后续冲突的伏笔，适合放慢速度观看。</p>
+          </div>
+          <span class="ep-tag">铺垫</span>
+        </article>
+        <article class="ep">
+          <span class="ep-no">前中段</span>
+          <div>
+            <h3>关系变化与第一次转折</h3>
+            <p>人物之间的信任开始松动，安娜韩剧的主要矛盾在此浮出水面。这一段的对话密度较高，留意语气与停顿，往往比台词本身更有信息。</p>
+          </div>
+          <span class="ep-tag">转折</span>
+        </article>
+        <article class="ep">
+          <span class="ep-no">中段</span>
+          <div>
+            <h3>选择落地与代价显现</h3>
+            <p>主角的决定开始产生实际后果，安娜韩剧的叙事重心从“发生了什么”转向“为什么如此”。这是全剧讨论度最高的区间。</p>
+          </div>
+          <span class="ep-tag">高潮</span>
+        </article>
+        <article class="ep">
+          <span class="ep-no">后段</span>
+          <div>
+            <h3>关系收束与情绪回落</h3>
+            <p>安娜韩剧在结尾部分把此前分散的线索逐条回收，节奏放缓。若前段有跳过，建议在这里补齐关键情节，理解会更完整。</p>
+          </div>
+          <span class="ep-tag">收束</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 角色关系 ===== -->
+  <section id="roles" aria-labelledby="roles-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">角色关系</p>
+        <h2 id="roles-title">安娜韩剧里谁在推动剧情</h2>
+        <p class="sec-desc">不必记住所有配角，先分清三类功能人物，就能跟上安娜韩剧的叙事推进。</p>
+      </div>
+      <div class="roles">
+        <article class="role">
+          <h3>主角</h3>
+          <p class="rline">选择的核心</p>
+          <p>安娜韩剧的叙事始终围绕主角展开。她的判断不一定正确，但决定了剧情方向，也承载了全剧最主要的情绪变化。</p>
+        </article>
+        <article class="role">
+          <h3>关键关系人</h3>
+          <p class="rline">推动与牵制</p>
+          <p>这类人物在安娜韩剧中承担推动或牵制的功能。他们的态度变化常常先于事件发生，是判断剧情走向的重要参照。</p>
+        </article>
+        <article class="role">
+          <h3>环境型配角</h3>
+          <p class="rline">氛围与压力</p>
+          <p>他们未必有完整支线，却构成了安娜韩剧的社会背景。正是这些日常互动，让主角的选择显得有重量，而不只是个人情绪。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">观剧问答</p>
+        <h2 id="faq-title">关于安娜韩剧的常见问题</h2>
+        <p class="sec-desc">整理观众在开始观看安娜韩剧前最常提出的几个问题。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>没看过原著或相关作品，能直接看安娜韩剧吗？</summary>
+          <p>可以。安娜韩剧的叙事相对独立，开篇会交代必要背景。若担心错过细节，可先浏览本页的故事背景与角色关系，再按集观看。</p>
+        </details>
+        <details>
+          <summary>安娜韩剧适合快进观看吗？</summary>
+          <p>不建议全程快进。安娜韩剧的关键信息常藏在对话与停顿中，中段转折尤其依赖前文铺垫。若时间有限，可按分集看点标记的阶段优先观看。</p>
+        </details>
+        <details>
+          <summary>看完之后想回顾，应该重点看哪些部分？</summary>
+          <p>建议重看中段的选择段落与后段的收束部分。安娜韩剧的呼应设计集中在这两处，回看时常能发现第一次观看时忽略的细节。</p>
+        </details>
+        <details>
+          <summary>本页内容会随剧集信息更新吗？</summary>
+          <p>本页以整理观剧路径为主，具体情节与集数以正式播出版本为准。页面结构留有扩展空间，后续可补充更细的分集说明。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2 id="cta-title">把安娜韩剧的观剧路径收进一份清单</h2>
+          <p>将故事背景、分集看点与角色关系整理为可离线查看的版本，方便在观看时随时对照。安娜韩剧的内容梳理仍在补充中，下载入口将在资料完善后开放。</p>
+        </div>
+        <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 64 64"><path d="M20 44V20l12 8 12-8v24" fill="none" stroke="#e8c07a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          </span>
+          <span class="brand-name">安娜韩剧</span>
+        </div>
+        <p class="foot-desc">安娜韩剧主题内容页，围绕故事背景、分集看点与角色关系提供观剧参考。页面信息以公开资料与常见讨论为基础，具体情节以正式播出版本为准。</p>
+      </div>
+      <nav class="foot-links" aria-label="页尾导航">
+        <a href="#story">故事背景</a>
+        <a href="#episodes">分集看点</a>
+        <a href="#roles">角色关系</a>
+        <a href="#faq">观剧问答</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>安娜韩剧 · 观剧参考首页</span>
+      <span>内容整理 · 仅供观剧参考</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
