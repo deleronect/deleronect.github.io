@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茄子人成年短视频-成年向茄子人短视频内容_茄子人短视频成年版_茄子人短视频成年向内容</title>
+<meta name="description" content="茄子人成年短视频主题首页，介绍成年向茄子人短视频的内容定位、栏目结构、观看方式与创作规范，帮助访问者快速找到茄子人成年短视频的入口与说明。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236b3fa0'/%3E%3Cpath d='M32 12c-6 0-10 5-10 12v6c0 9 4 14 10 14s10-5 10-14v-6c0-7-4-12-10-12z' fill='%23f5f0ff'/%3E%3Cpath d='M32 6c2 0 4 3 4 6h-8c0-3 2-6 4-6z' fill='%2386d36b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241b33;
+  --ink-soft:#4a3f5e;
+  --muted:#6f6582;
+  --brand:#6b3fa0;
+  --brand-deep:#4a2478;
+  --brand-light:#a37ad6;
+  --leaf:#5f9e4a;
+  --paper:#faf8fd;
+  --card:#ffffff;
+  --line:#e4ddef;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(74,36,120,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.wrap{width:min(1120px,92vw);margin:0 auto;}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,248,253,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-weight:800;font-size:1.02rem;letter-spacing:.2px;
+  color:var(--brand-deep);white-space:nowrap;
+}
+.logo .mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(150deg,var(--brand),var(--brand-light));
+  display:grid;place-items:center;flex:none;
+  box-shadow:0 6px 14px rgba(107,63,160,.28);
+}
+.nav{display:flex;gap:6px;flex-wrap:wrap;}
+.nav a{
+  font-size:.92rem;padding:8px 13px;border-radius:999px;
+  color:var(--ink-soft);transition:.2s;
+}
+.nav a:hover,.nav a:focus-visible{background:#efe7fa;color:var(--brand-deep);}
+.nav a.cta{
+  background:var(--brand);color:#fff;font-weight:600;
+  box-shadow:0 6px 16px rgba(107,63,160,.25);
+}
+.nav a.cta:hover{background:var(--brand-deep);color:#fff;}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  padding:56px 0 60px;
+  background:
+    radial-gradient(900px 380px at 88% -8%, #e7dcfa 0%, transparent 62%),
+    radial-gradient(700px 340px at 4% 106%, #e3f2dc 0%, transparent 60%),
+    var(--paper);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:44px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8rem;font-weight:700;letter-spacing:1.4px;
+  color:var(--brand);background:#efe7fa;
+  padding:6px 14px;border-radius:999px;margin-bottom:18px;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--leaf);}
+h1{
+  font-size:clamp(1.85rem,4.2vw,2.85rem);
+  line-height:1.28;font-weight:800;letter-spacing:.5px;
+  color:var(--brand-deep);margin-bottom:18px;
+}
+h1 .hl{
+  background:linear-gradient(180deg,transparent 62%,#d9c7f2 62%);
+  padding:0 2px;
+}
+.hero-lead{
+  font-size:1.02rem;color:var(--ink-soft);max-width:34em;
+  margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:999px;font-weight:700;font-size:.95rem;
+  transition:.2s;border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{
+  background:var(--brand);color:#fff;
+  box-shadow:0 10px 24px rgba(107,63,160,.28);
+}
+.btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px);}
+.btn-ghost{
+  background:#fff;color:var(--brand-deep);border-color:#d9cde9;
+}
+.btn-ghost:hover{border-color:var(--brand-light);background:#f6f1fd;}
+.btn[aria-disabled="true"]{
+  background:#eee9f6;color:#8d81a3;box-shadow:none;
+  pointer-events:none;cursor:default;
+}
+.hero-stats{
+  display:flex;gap:28px;flex-wrap:wrap;
+  padding-top:20px;border-top:1px dashed #d8cbea;
+}
+.stat b{display:block;font-size:1.3rem;color:var(--brand-deep);line-height:1.3;}
+.stat span{font-size:.82rem;color:var(--muted);}
+
+.hero-visual{
+  position:relative;
+  background:linear-gradient(160deg,#fff,#f3ecfc);
+  border:1px solid var(--line);
+  border-radius:26px;padding:22px;
+  box-shadow:var(--shadow);
+}
+.hero-visual .tag{
+  position:absolute;top:-13px;right:22px;
+  background:var(--leaf);color:#fff;font-size:.74rem;font-weight:700;
+  padding:5px 13px;border-radius:999px;letter-spacing:.5px;
+  box-shadow:0 6px 14px rgba(95,158,74,.3);
+}
+.screen{
+  border-radius:16px;overflow:hidden;background:#2a1c3d;
+  aspect-ratio:4/3;display:grid;place-items:center;position:relative;
+}
+.screen .play{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(255,255,255,.92);
+  display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.25);
+}
+.hero-visual .meta{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:14px;font-size:.82rem;color:var(--muted);
+}
+.hero-visual .meta strong{color:var(--brand-deep);font-size:.9rem;}
+
+/* ---------- Section shared ---------- */
+section{padding:60px 0;}
+.sec-head{max-width:44em;margin-bottom:34px;}
+.sec-kicker{
+  font-size:.78rem;font-weight:800;letter-spacing:2px;
+  color:var(--brand-light);text-transform:uppercase;margin-bottom:10px;
+}
+h2{
+  font-size:clamp(1.35rem,2.6vw,1.75rem);
+  font-weight:800;color:var(--brand-deep);line-height:1.4;margin-bottom:12px;
+}
+.sec-head p{color:var(--ink-soft);font-size:.97rem;}
+
+/* ---------- Grid cards ---------- */
+.cards{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:24px 22px;
+  box-shadow:var(--shadow);transition:.25s;
+}
+.card:hover{transform:translateY(-3px);border-color:#d3c2ec;}
+.card .ico{
+  width:44px;height:44px;border-radius:13px;
+  background:#f1e9fc;display:grid;place-items:center;margin-bottom:16px;
+}
+.card h3{
+  font-size:1.03rem;font-weight:800;color:var(--brand-deep);margin-bottom:9px;
+}
+.card p{font-size:.9rem;color:var(--ink-soft);}
+.card .num{
+  font-size:.75rem;font-weight:800;color:var(--brand-light);
+  letter-spacing:1px;margin-bottom:6px;
+}
+
+/* ---------- Feature split ---------- */
+.split{
+  display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center;
+}
+.split-visual{
+  border-radius:24px;overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(150deg,#f4edfd,#e9f5e3);
+  padding:30px;box-shadow:var(--shadow);
+}
+.split-text h2{margin-bottom:16px;}
+.split-text p{color:var(--ink-soft);font-size:.96rem;margin-bottom:14px;}
+.checklist{list-style:none;display:grid;gap:11px;margin-top:6px;}
+.checklist li{
+  display:flex;gap:11px;align-items:flex-start;
+  font-size:.93rem;color:var(--ink-soft);
+}
+.checklist .tick{
+  flex:none;width:20px;height:20px;border-radius:50%;
+  background:#e3f2dc;color:var(--leaf);
+  display:grid;place-items:center;font-size:.72rem;font-weight:900;
+  margin-top:3px;
+}
+
+/* ---------- Steps ---------- */
+.steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s;
+}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;position:relative;
+}
+.step::before{
+  counter-increment:s;content:"0" counter(s);
+  font-size:1.5rem;font-weight:900;color:#e2d5f4;
+  display:block;margin-bottom:8px;letter-spacing:1px;
+}
+.step h3{font-size:.96rem;font-weight:800;color:var(--brand-deep);margin-bottom:7px;}
+.step p{font-size:.86rem;color:var(--muted);}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:12px;max-width:820px;}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:16px 20px;transition:.2s;
+}
+details[open]{border-color:#d3c2ec;box-shadow:var(--shadow);}
+summary{
+  cursor:pointer;font-weight:700;font-size:.95rem;color:var(--brand-deep);
+  list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";font-size:1.2rem;color:var(--brand-light);
+  transition:.2s;flex:none;
+}
+details[open] summary::after{content:"–";}
+details p{
+  margin-top:12px;font-size:.9rem;color:var(--ink-soft);
+  padding-top:12px;border-top:1px dashed var(--line);
+}
+
+/* ---------- Notice / download ---------- */
+.notice{
+  background:linear-gradient(135deg,#f6f1fd,#eef7e9);
+  border:1px solid #ded2f0;border-radius:24px;
+  padding:38px 36px;display:flex;justify-content:space-between;
+  align-items:center;gap:28px;flex-wrap:wrap;
+}
+.notice h2{margin-bottom:8px;}
+.notice p{color:var(--ink-soft);font-size:.93rem;max-width:36em;}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:#241b33;color:#cdc2de;padding:46px 0 26px;margin-top:20px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;
+  padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.site-footer .logo{color:#fff;font-size:.98rem;margin-bottom:14px;}
+.site-footer p{font-size:.85rem;line-height:1.8;color:#a99cbe;max-width:26em;}
+.footer-col h4{
+  font-size:.86rem;color:#fff;margin-bottom:13px;font-weight:700;letter-spacing:.5px;
+}
+.footer-col ul{list-style:none;display:grid;gap:9px;}
+.footer-col a{font-size:.85rem;color:#a99cbe;transition:.2s;}
+.footer-col a:hover{color:#fff;}
+.copyright{
+  padding-top:20px;font-size:.79rem;color:#8b7fa0;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .hero-grid,.split{grid-template-columns:1fr;gap:32px;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .steps{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .hero-visual{order:-1;}
+}
+@media (max-width:620px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px;}
+  .logo{font-size:.95rem;}
+  .nav{gap:4px;}
+  .nav a{font-size:.84rem;padding:6px 10px;}
+  .hero{padding:34px 0 40px;}
+  h1{font-size:1.62rem;}
+  .hero-lead{font-size:.94rem;}
+  .hero-actions .btn{flex:1;justify-content:center;}
+  .hero-stats{gap:18px;}
+  .cards,.steps{grid-template-columns:1fr;}
+  section{padding:42px 0;}
+  .notice{padding:26px 22px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-visual{order:0;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="茄子人成年短视频首页">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2.6c-2.3 0-3.9 2-3.9 4.7v2.4c0 3.5 1.6 5.5 3.9 5.5s3.9-2 3.9-5.5V7.3c0-2.7-1.6-4.7-3.9-4.7z" fill="#fff"/>
+          <path d="M12 1c.9 0 1.7 1.2 1.7 2.4h-3.4C10.3 2.2 11.1 1 12 1z" fill="#c8f0b6"/>
+          <path d="M6.6 15.4c1.2 1.6 3.1 2.6 5.4 2.6s4.2-1 5.4-2.6" stroke="#c8f0b6" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </span>
+      茄子人成年短视频
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">内容定位</a>
+      <a href="#sections">栏目结构</a>
+      <a href="#how">观看方式</a>
+      <a href="#creators">创作规范</a>
+      <a href="#faq">常见问题</a>
+      <a class="cta" href="#access">进入主题页</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span>成年向内容 · 主题首页</span>
+        <h1 id="hero-title"><span class="hl">茄子人成年短视频</span></h1>
+        <p class="hero-lead">
+          这是一个围绕茄子人成年短视频搭建的主题首页：把内容定位、栏目结构、观看路径与创作规范集中在一页说清楚。访问者不必在零散页面之间来回跳转，就能判断茄子人成年短视频是否适合自己，以及从哪里开始看、以什么方式看。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#sections">
+            浏览内容栏目
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#how">了解观看方式</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>4 类</b><span>内容栏目分区</span></div>
+          <div class="stat"><b>18+</b><span>成年向受众定位</span></div>
+          <div class="stat"><b>4 步</b><span>观看与反馈路径</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <span class="tag">成年向</span>
+        <div class="screen">
+          <div class="play">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#6b3fa0"/></svg>
+          </div>
+        </div>
+        <div class="meta">
+          <strong>茄子人成年短视频 · 主题预览</strong>
+          <span>示意画面</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Content Positioning</div>
+        <h2 id="about-title">茄子人成年短视频的内容定位</h2>
+        <p>名称里已经包含三层信息：形象是茄子人，受众是成年人，载体是短视频。理解这三层，才能判断这一主题页提供的到底是什么。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#6b3fa0" stroke-width="1.8"/><path d="M4.5 20c1.2-3.6 4-5.5 7.5-5.5s6.3 1.9 7.5 5.5" stroke="#6b3fa0" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div class="num">01 / 形象</div>
+          <h3>茄子人角色设定</h3>
+          <p>茄子人是内容中的主要视觉形象，承担叙事与表达的功能。围绕它展开的短片更看重角色本身的性格与处境，而不是单纯依靠外形博取注意。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="#6b3fa0" stroke-width="1.8"/><path d="M8 10.5h3M8 13.5h6" stroke="#6b3fa0" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="num">02 / 受众</div>
+          <h3>成年向的受众边界</h3>
+          <p>成年向指内容面向 18 岁及以上访问者，题材与讨论更贴近成年人的生活经验。页面不面向未成年人，也不以未成年人为内容对象。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#6b3fa0" stroke-width="1.8"/><path d="M10 9.2v5.6l4.6-2.8-4.6-2.8z" fill="#6b3fa0"/></svg>
+          </div>
+          <div class="num">03 / 载体</div>
+          <h3>短视频的表达节奏</h3>
+          <p>短视频时长有限，茄子人成年短视频更依赖单个场景、一句台词或一个反转完成表达，观看时不必依赖连续剧情也能理解。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTIONS -->
+  <section id="sections" aria-labelledby="sections-title" style="background:#f4effb;">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Structure</div>
+        <h2 id="sections-title">茄子人成年短视频的栏目结构</h2>
+        <p>主题页把内容拆成四个栏目，每个栏目承担不同的观看任务。访问者可以先看栏目说明，再决定进入哪一类，而不是从头到尾被动刷完。</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h3>角色短片</h3>
+          <p>以茄子人为主角的短篇，强调人物性格与日常处境，适合第一次接触这一主题的访问者。</p>
+        </article>
+        <article class="step">
+          <h3>情境短剧</h3>
+          <p>两三个角色在具体场景中发生对话与冲突，节奏更快，需要一定的成年生活经验才能读懂语境。</p>
+        </article>
+        <article class="step">
+          <h3>幕后与创作谈</h3>
+          <p>记录选题、分镜与拍摄思路，适合想了解内容如何被制作出来的访问者，也方便创作者对照参考。</p>
+        </article>
+        <article class="step">
+          <h3>主题合集</h3>
+          <p>按题材归并的短片集合，便于按兴趣集中观看，也方便回头查找看过但没记住标题的内容。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how" aria-labelledby="how-title">
+    <div class="wrap split">
+      <div class="split-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 240" role="img" aria-label="观看路径示意图">
+          <rect x="18" y="26" width="284" height="188" rx="18" fill="#fff" stroke="#e0d5f0"/>
+          <rect x="40" y="50" width="112" height="14" rx="7" fill="#e4d7f7"/>
+          <rect x="40" y="74" width="168" height="10" rx="5" fill="#efe8f9"/>
+          <rect x="40" y="92" width="140" height="10" rx="5" fill="#efe8f9"/>
+          <rect x="40" y="122" width="72" height="72" rx="12" fill="#f0e9fb"/>
+          <rect x="124" y="122" width="72" height="72" rx="12" fill="#e7f3e1"/>
+          <rect x="208" y="122" width="72" height="72" rx="12" fill="#f0e9fb"/>
+          <circle cx="76" cy="158" r="14" fill="#a37ad6"/>
+          <circle cx="160" cy="158" r="14" fill="#5f9e4a"/>
+          <circle cx="244" cy="158" r="14" fill="#a37ad6"/>
+        </svg>
+      </div>
+      <div class="split-text">
+        <div class="sec-kicker">How To Watch</div>
+        <h2 id="how-title">从哪里开始看茄子人成年短视频</h2>
+        <p>访问需求通常有两种：第一次来，想快速判断内容合不合口味；或者已经看过，想找某个具体栏目。下面这条路径对两种人都有用。</p>
+        <ul class="checklist">
+          <li><span class="tick">✓</span><span>先读栏目说明，用一两分钟确认题材方向与受众定位是否匹配自己的预期。</span></li>
+          <li><span class="tick">✓</span><span>从「角色短片」入门，单条时长较短，理解门槛低，适合建立对茄子人形象的初步印象。</span></li>
+          <li><span class="tick">✓</span><span>再按兴趣进入「情境短剧」或「主题合集」，这两类内容更依赖对角色关系的熟悉程度。</span></li>
+          <li><span class="tick">✓</span><span>想了解制作过程时，转到「幕后与创作谈」，按选题、分镜、拍摄的顺序阅读更顺。</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATORS -->
+  <section id="creators" aria-labelledby="creators-title" style="background:#f4effb;">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">Guidelines</div>
+        <h2 id="creators-title">茄子人成年短视频的创作与浏览规范</h2>
+        <p>成年向不等于无边界。主题页对内容与浏览都给出明确约定，创作者和访问者可以据此判断什么该做、什么不该做。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>受众提示前置</h3>
+          <p>成年向内容应在标题或简介中清楚标注受众范围，不使用模糊表述吸引未成年访问者，避免误导性封面与标题。</p>
+        </article>
+        <article class="card">
+          <h3>题材贴近生活</h3>
+          <p>鼓励从成年人的真实处境取材，如工作、家庭与社交。虚构可以存在，但不应把夸张设定包装成现实建议。</p>
+        </article>
+        <article class="card">
+          <h3>尊重形象与版权</h3>
+          <p>使用茄子人形象进行二次创作时，应注明来源并遵守授权范围；转载他人短片前先确认可转载状态，不擅自搬运。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-kicker">FAQ</div>
+        <h2 id="faq-title">关于茄子人成年短视频的常见问题</h2>
+        <p>以下几组问题是访问者在了解这一主题时最常提出的，回答尽量给出可操作的判断依据，而不是笼统表态。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>茄子人成年短视频适合哪些人看？</summary>
+          <p>面向 18 岁及以上、对角色向短剧和轻量叙事感兴趣的访问者。若你更偏好长剧情或纪录片式内容，这里的短片可能节奏偏快、信息密度偏低。</p>
+        </details>
+        <details>
+          <summary>需要按顺序观看吗？</summary>
+          <p>不需要。角色短片与情境短剧多为独立单元，单条即可理解。只有「主题合集」内的部分系列建议按发布顺序看，页面会在合集说明中标注。</p>
+        </details>
+        <details>
+          <summary>页面上的内容入口现在可用吗？</summary>
+          <p>栏目导航与页内锚点均可正常使用。下载类入口当前处于占位状态，尚未接入真实文件地址，按钮已按禁用方式展示，避免误点。</p>
+        </details>
+        <details>
+          <summary>如何反馈内容问题？</summary>
+          <p>可通过页尾的联系入口说明具体栏目与问题类型，并附上页面位置。涉及版权或受众标注的反馈会优先处理。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section id="access" aria-labelledby="access-title">
+    <div class="wrap">
+      <div class="notice">
+        <div>
+          <h2 id="access-title">进入茄子人成年短视频主题页</h2>
+          <p>从栏目结构开始，按自己的兴趣选择入口；需要离线保存栏目说明时，可使用下方下载入口。茄子人成年短视频的后续更新会同步反映在本页栏目说明中。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="#sections">查看全部栏目</a>
+          <a class="btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载栏目说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">
+          <span class="mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2.6c-2.3 0-3.9 2-3.9 4.7v2.4c0 3.5 1.6 5.5 3.9 5.5s3.9-2 3.9-5.5V7.3c0-2.7-1.6-4.7-3.9-4.7z" fill="#fff"/>
+              <path d="M12 1c.9 0 1.7 1.2 1.7 2.4h-3.4C10.3 2.2 11.1 1 12 1z" fill="#c8f0b6"/>
+            </svg>
+          </span>
+          茄子人成年短视频
+        </div>
+        <p>围绕茄子人角色展开的成年向短视频主题首页，集中说明内容定位、栏目结构、观看路径与创作规范，帮助访问者快速找到合适的入口。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#sections">角色短片</a></li>
+          <li><a href="#sections">情境短剧</a></li>
+          <li><a href="#sections">幕后与创作谈</a></li>
+          <li><a href="#sections">主题合集</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>使用说明</h4>
+        <ul>
+          <li><a href="#about">内容定位</a></li>
+          <li><a href="#how">观看方式</a></li>
+          <li><a href="#creators">创作规范</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>页面信息</h4>
+        <ul>
+          <li><a href="#access">主题入口</a></li>
+          <li><a href="#top">返回顶部</a></li>
+          <li><a href="#faq">受众提示</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 茄子人成年短视频 · 主题首页</span>
+      <span>成年向内容，面向 18 岁及以上访问者</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
