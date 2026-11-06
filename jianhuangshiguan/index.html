@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鉴黄师官方下载-鉴黄师下载安装_鉴黄师app官方下载_内容审核工具下载</title>
+<meta name="description" content="鉴黄师官方下载页面，提供鉴黄师下载安装说明、版本信息、功能能力与使用流程介绍，帮助内容审核人员了解鉴黄师app官方下载渠道与部署条件。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2f3d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%2338d6b0' stroke-width='4'/%3E%3Cpath d='M24 32l6 6 11-12' fill='none' stroke='%2338d6b0' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0f2f3d;
+  --ink-soft:#365361;
+  --mint:#38d6b0;
+  --mint-deep:#18a98a;
+  --paper:#f4f8f8;
+  --card:#ffffff;
+  --line:#dfe9e8;
+  --warn:#c9791f;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+section{padding:56px 0}
+h1,h2,h3{line-height:1.35;letter-spacing:.01em}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,248,248,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:14px 0;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--ink)}
+.logo .mark{width:34px;height:34px;flex:0 0 34px}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;color:var(--ink-soft)}
+.nav ul a:hover{color:var(--mint-deep)}
+.nav .cta{
+  font-size:14px;font-weight:600;padding:9px 18px;border-radius:999px;
+  background:var(--ink);color:#fff;white-space:nowrap;
+}
+.nav .cta:hover{background:#17475b}
+.nav-toggle{display:none}
+
+/* hero */
+.hero{
+  padding:64px 0 56px;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(56,214,176,.18),transparent 55%),
+    linear-gradient(180deg,#eef6f5,#f4f8f8);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;color:var(--mint-deep);
+  background:#e2f6f0;border:1px solid #c8ece1;
+  padding:5px 14px;border-radius:999px;margin-bottom:20px;
+}
+h1{font-size:clamp(28px,3.6vw,44px);font-weight:800;letter-spacing:.005em}
+.hero p.lead{margin-top:18px;font-size:16px;color:var(--ink-soft);max-width:34em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 26px;border-radius:12px;font-size:15px;font-weight:600;
+  transition:.18s;
+}
+.btn-primary{background:var(--mint-deep);color:#fff;box-shadow:0 8px 20px rgba(24,169,138,.25)}
+.btn-primary:hover{background:#149a7d}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--mint);color:var(--mint-deep)}
+[aria-disabled="true"]{pointer-events:none;opacity:.85;cursor:default}
+.hero-facts{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.hero-facts div{font-size:13px;color:var(--ink-soft)}
+.hero-facts b{display:block;font-size:20px;color:var(--ink);font-weight:700}
+.hero-visual{
+  background:#fff;border:1px solid var(--line);border-radius:22px;
+  padding:22px;box-shadow:0 24px 50px -30px rgba(15,47,61,.35);
+}
+.hero-visual .bar{display:flex;gap:6px;margin-bottom:16px}
+.hero-visual .bar i{width:9px;height:9px;border-radius:50%;background:#d5e3e2}
+.hero-visual .bar i:first-child{background:var(--mint)}
+.screen-row{
+  display:flex;align-items:center;gap:12px;
+  border:1px solid var(--line);border-radius:12px;
+  padding:11px 13px;margin-bottom:10px;font-size:13.5px;color:var(--ink-soft);
+}
+.screen-row .dot{width:26px;height:26px;border-radius:8px;flex:0 0 26px;display:grid;place-items:center;color:#fff;font-size:12px}
+.dot.ok{background:var(--mint-deep)}
+.dot.hold{background:var(--warn)}
+.dot.rev{background:#5b7f95}
+.screen-row b{color:var(--ink);font-weight:600}
+.screen-foot{margin-top:14px;font-size:12.5px;color:#7c959e;text-align:right}
+
+/* sections */
+.sec-head{max-width:640px;margin-bottom:34px}
+.sec-head .tag{font-size:13px;font-weight:700;color:var(--mint-deep);letter-spacing:.12em}
+.sec-head h2{font-size:clamp(22px,2.6vw,30px);margin-top:8px}
+.sec-head p{margin-top:12px;color:var(--ink-soft);font-size:15px}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;transition:.2s;
+}
+.card:hover{border-color:#bfe6dc;box-shadow:0 16px 34px -26px rgba(15,47,61,.5)}
+.card .ico{
+  width:44px;height:44px;border-radius:12px;background:#e6f7f2;
+  display:grid;place-items:center;margin-bottom:16px;
+}
+.card h3{font-size:16.5px;margin-bottom:9px}
+.card p{font-size:14.5px;color:var(--ink-soft)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;position:relative;
+}
+.step::before{
+  counter-increment:s;content:counter(s);
+  position:absolute;top:-16px;left:20px;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--ink);color:#fff;font-size:14px;font-weight:700;
+  display:grid;place-items:center;
+}
+.step h3{font-size:15.5px;margin:10px 0 8px}
+.step p{font-size:14px;color:var(--ink-soft)}
+
+/* requirements table */
+.req{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;
+}
+.req-row{display:grid;grid-template-columns:200px 1fr;gap:0;border-bottom:1px solid var(--line)}
+.req-row:last-child{border-bottom:none}
+.req-row dt{
+  padding:16px 22px;background:#f0f7f6;font-size:14px;font-weight:600;color:var(--ink);
+}
+.req-row dd{padding:16px 22px;font-size:14.5px;color:var(--ink-soft);margin:0}
+
+/* notice */
+.notice{
+  background:linear-gradient(135deg,#0f2f3d,#1c4b5e);
+  border-radius:22px;padding:44px 42px;color:#e6f4f1;
+  display:grid;grid-template-columns:1.3fr .7fr;gap:34px;align-items:center;
+}
+.notice h2{font-size:clamp(20px,2.4vw,27px);color:#fff}
+.notice p{margin-top:14px;font-size:14.5px;color:#c3dcd8;line-height:1.85}
+.notice .btn-primary{background:var(--mint);color:#0b2a24;box-shadow:none}
+.notice .btn-primary:hover{background:#57e3c1}
+
+/* faq */
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:16px 20px;margin-bottom:12px;
+}
+.faq summary{
+  cursor:pointer;font-weight:600;font-size:15px;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--mint-deep);font-size:20px;font-weight:400;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:12px;font-size:14.5px;color:var(--ink-soft)}
+
+/* footer */
+footer{
+  background:#0f2f3d;color:#b8d2d0;padding:48px 0 30px;font-size:14px;
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:16.5px;margin-bottom:14px}
+.foot-grid p{font-size:13.5px;line-height:1.85;color:#8fb0ae}
+.foot-grid h4{color:#fff;font-size:14px;margin-bottom:14px;font-weight:600}
+.foot-grid ul{list-style:none;display:grid;gap:9px;font-size:13.5px}
+.foot-grid ul a:hover{color:var(--mint)}
+.copy{padding-top:22px;text-align:center;font-size:12.5px;color:#7899a0}
+
+@media(max-width:900px){
+  .hero-grid,.notice{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .nav ul{display:none}
+  .req-row{grid-template-columns:1fr}
+  .req-row dt{border-bottom:1px solid var(--line)}
+}
+@media(max-width:560px){
+  section{padding:42px 0}
+  .hero{padding:42px 0 40px}
+  .steps{grid-template-columns:1fr}
+  .hero-facts{gap:22px}
+  .notice{padding:30px 24px}
+  .nav .cta{display:none}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="鉴黄师官方下载 首页">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#0f2f3d"/>
+        <circle cx="32" cy="32" r="17" fill="none" stroke="#38d6b0" stroke-width="4"/>
+        <path d="M24 32l6 6 11-12" fill="none" stroke="#38d6b0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>鉴黄师官方下载</span>
+    </a>
+    <nav aria-label="主导航">
+      <ul>
+        <li><a href="#features">功能能力</a></li>
+        <li><a href="#install">下载安装</a></li>
+        <li><a href="#specs">运行环境</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#install">获取安装包</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">内容审核工具 · 版本说明页</span>
+        <h1>鉴黄师官方下载</h1>
+        <p class="lead">鉴黄师是一款面向内容审核场景的辅助工具，用于对图文素材进行初步筛查与人工复核。本页集中说明鉴黄师官方下载的安装流程、功能范围与运行环境，方便审核团队在部署前完成确认。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#install" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 21h16"/></svg>
+            下载
+          </a>
+          <a class="btn btn-ghost" href="#install">查看安装说明</a>
+        </div>
+        <div class="hero-facts">
+          <div><b>图文筛查</b>批量导入与识别</div>
+          <div><b>人工复核</b>结果可回溯</div>
+          <div><b>本地运行</b>素材不出内网</div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="screen-row"><span class="dot ok">✓</span><span><b>样本 A-0213</b> · 正常内容</span></div>
+        <div class="screen-row"><span class="dot hold">!</span><span><b>样本 A-0214</b> · 待人工复核</span></div>
+        <div class="screen-row"><span class="dot rev">×</span><span><b>样本 A-0215</b> · 判定违规</span></div>
+        <div class="screen-row"><span class="dot ok">✓</span><span><b>样本 A-0216</b> · 正常内容</span></div>
+        <div class="screen-foot">界面示意，实际以安装包版本为准</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">功能能力</span>
+        <h2>鉴黄师在审核流程中承担哪些环节</h2>
+        <p>鉴黄师官方下载的版本定位是辅助筛查工具，而非自动裁决系统。审核结论仍需由具备权限的审核人员确认，工具负责降低初筛的重复劳动。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18a98a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+          </div>
+          <h3>批量图文筛查</h3>
+          <p>支持按文件夹或列表批量导入素材，工具对图片与文字内容给出初步判断，并按类别汇总，便于审核人员优先处理风险较高的条目。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18a98a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>人工复核留痕</h3>
+          <p>每一条判定结果都保留处理记录，包括审核人、处理时间与最终结论。出现争议时可按记录回溯，减少口头沟通带来的信息丢失。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18a98a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h7"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h3>规则与阈值调整</h3>
+          <p>审核团队可根据自身业务口径调整判定阈值，在召回与误报之间寻找平衡。调整后的配置可随团队统一分发，保持审核标准一致。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section id="install" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">下载安装</span>
+        <h2>鉴黄师下载安装的四步流程</h2>
+        <p>鉴黄师app官方下载完成后，建议先在测试设备上完成一次完整流程，确认素材导入、筛查与复核三个环节均可正常使用，再推广到审核团队。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>获取安装包</h3>
+          <p>从本页下载入口获取安装包，并核对文件名与版本号是否与说明一致。</p>
+        </div>
+        <div class="step">
+          <h3>完成安装</h3>
+          <p>按安装向导完成部署，首次启动时选择素材存放目录与日志位置。</p>
+        </div>
+        <div class="step">
+          <h3>导入样本</h3>
+          <p>导入一小批已知结论的样本，用于验证当前阈值是否符合团队口径。</p>
+        </div>
+        <div class="step">
+          <h3>建立复核流程</h3>
+          <p>指定复核人员与处理时限，将工具结果接入既有的内容审核工单。</p>
+        </div>
+      </div>
+      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px">
+        <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 21h16"/></svg>
+          下载
+        </a>
+        <a class="btn btn-ghost" href="#specs">查看运行环境</a>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:#7c959e">下载入口当前为占位状态，正式地址以上线公告为准。</p>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section id="specs">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">运行环境</span>
+        <h2>部署鉴黄师前需要确认的条件</h2>
+        <p>以下条件为部署前的通用参考项，具体数值以随安装包提供的说明文件为准。若团队设备规格差异较大，建议先做小范围试运行。</p>
+      </div>
+      <dl class="req">
+        <div class="req-row"><dt>操作系统</dt><dd>桌面端为主流 64 位 Windows 与 macOS 版本；如需在其他系统运行，请先确认兼容性说明。</dd></div>
+        <div class="req-row"><dt>存储空间</dt><dd>需为程序本体与日志预留空间，素材目录建议独立挂载，避免与系统盘混用。</dd></div>
+        <div class="req-row"><dt>网络条件</dt><dd>支持本地运行模式，素材无需外传；如启用团队协作，需保证内网互通。</dd></div>
+        <div class="req-row"><dt>账号与权限</dt><dd>建议按审核员、复核员、管理员分角色配置权限，复核结论仅由具备权限的账号提交。</dd></div>
+        <div class="req-row"><dt>数据留存</dt><dd>处理记录与日志的保存周期由团队制度决定，工具侧提供导出能力，便于归档。</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="notice">
+        <div>
+          <h2>关于鉴黄师官方下载渠道的说明</h2>
+          <p>鉴黄师官方下载渠道以本页与正式公告为准。第三方站点提供的安装包可能被修改，存在风险，建议在安装前核对文件来源与版本号。工具输出结果为辅助判断，最终审核结论由审核人员依据团队规范作出。</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="#install">回到安装说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">常见问题</span>
+        <h2>访问者在鉴黄师官方下载前的疑问</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>鉴黄师官方下载的安装包包含哪些内容？</summary>
+          <p>安装包通常包含程序本体、运行说明与默认配置模板。具体组件清单以安装包内附文件为准，安装前建议完整阅读。</p>
+        </details>
+        <details>
+          <summary>工具会替代人工审核吗？</summary>
+          <p>不会。鉴黄师定位为辅助筛查工具，负责把明显正常的素材过滤掉，把可疑素材集中呈现给审核人员。最终判定仍由人完成。</p>
+        </details>
+        <details>
+          <summary>素材会不会上传到外部服务器？</summary>
+          <p>本地运行模式下素材不需要外传，处理过程在设备内完成。如启用团队协作功能，数据流向以部署说明中的描述为准。</p>
+        </details>
+        <details>
+          <summary>鉴黄师app官方下载与其他版本有什么区别？</summary>
+          <p>不同渠道的版本在功能范围与更新节奏上可能不同。建议以本页说明与正式公告为参照，避免使用来源不明的安装包。</p>
+        </details>
+        <details>
+          <summary>如何确认当前使用的是最新版本？</summary>
+          <p>可在程序内的版本信息处查看当前版本号，并与官方说明中的版本记录比对。版本更新前建议先备份配置与处理记录。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#1c4b5e"/>
+            <circle cx="32" cy="32" r="17" fill="none" stroke="#38d6b0" stroke-width="4"/>
+            <path d="M24 32l6 6 11-12" fill="none" stroke="#38d6b0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>鉴黄师官方下载</span>
+        </div>
+        <p>鉴黄师官方下载页面，用于说明内容审核辅助工具的下载安装流程、功能范围与运行环境，服务审核团队的部署前确认。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#features">功能能力</a></li>
+          <li><a href="#install">下载安装</a></li>
+          <li><a href="#specs">运行环境</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用提示</h4>
+        <ul>
+          <li>安装前核对文件来源</li>
+          <li>先小范围试运行</li>
+          <li>按角色分配权限</li>
+          <li>定期备份处理记录</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">鉴黄师官方下载 · 本页内容用于版本与部署说明，下载入口正式地址以上线公告为准。</div>
+  </div>
+</footer>
+
+</body>
+</html>
